@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Assignment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-col column">
+        <div class="menu">
+          <div class="logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS368CzivrybCgPabH-OhA9wk0mX7BsnbT2_oC4Tvn-jGKki2hUb6x9r-Zr-5QMvrVBGSA&usqp=CAU"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="menu-things">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-regular fa-keyboard"></i>
+            <i class="fa-regular fa-rectangle-list"></i>
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="menu-footer">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </div>
+        </div>
+        <div class="first-page">
+          <div class="profile-body">
+            <img
+              claass="profile-pic"
+              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
+              alt="profile-pic"
+            />
+            <div class="profile-text">
+              <p>Hii Mike,</p>
+              <p>Welcome Back</p>
+            </div>
+          </div>
+          <div class="account-balance">
+            <h6>Today</h6>
+            <h3>$ 19892</h3>
+            <p>Account Balance</p>
+            <h5>$ 4000</h5>
+            <p>Year-to-Date-Contribution</p>
+            <h5>$ 1892</h5>
+            <p>Take Interest</p>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                I want to &nbsp; &nbsp;
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <div class="Transaction-text">
+              <h6>Recent Transactions</h6>
+              <p>2023-8-3</p>
+              <span>WithDrawal transfer to Bank-XX11</span>
+              <p>2023-8-3</p>
+              <span>WithDrawal transfer to Bank-XX11</span>
+              <p>2023-8-3</p>
+              <span>WithDrawal transfer to Bank-XX11</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second-col column">
+        <div>
+          <p class="blue">Retirement Income</p>
+          <p class="starting-year">Starting Year 2056</p>
+          <div class="Goals">
+            <div class="Goal">
+              <h3>$ 300,000</h3>
+              <p>My Goal</p>
+              <p class="hr"></p>
+            </div>
+            <div class="Achieved">
+              <h3>54%</h3>
+              <p>Goal Achieved</p>
+              <p class="hr"></p>
+            </div>
+            <div class="salary">
+              <h3>$ 300</h3>
+              <p>est. monthly salary</p>
+              <p class="hr"></p>
+            </div>
+          </div>
+        </div>
+        <div class="chart">
+            <h5>Contribution Overtime</h5>
+
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="pie-chart">
+             <h5>How do I compare to my peers?</h5>
+             <p>These numbers represent current goal achievement</p>
+             <div class="big-cicleAndText">
+                  <div class="Text">
+                      <p><strong>Age</strong> : Under 30</p>
+                      <p><strong>Salary</strong> : K 20 - K 30</p>
+                      <p><strong>Gender</strong> : Male</p>
+                  </div>
+             <div class="circles">
+                <div class="center"><div class="circle1">93%</div><p>Average</p></div>
+                <div class="center"><div class="circle1">93%</div><p>Top</p></div>
+                <div class="center"><div class="circle1">93%</div><p>Me</p></div>
+             </div>
+             </div>
+        </div>
+      </div>
+      <div class="third-col column">
+            <h5>Retirement Stratergy</h5>
+            <p>Employee Contribution</p>
+            <input type="range" value="12" min="0" max="100"><span>&nbsp; 12%</span>
+            <p>Retirement Age</p>
+            <input type="range" value="65" min="0" max="100"><span>&nbsp; 65</span>
+            <hr>
+            <div class="ContributionAndRate">
+                 <p>Employee Contribution</p>
+                 <p>8.4%</p>
+            </div>
+            <div class="ContributionAndRate">
+              <p>Interest Rate</p>
+              <p>5%</p>
+            </div>
+            <div class="button"><button>Update</button></div>
+            <div class="link"><a href="#">view help doc</a></div>
+            <div class="last-box">
+                 <p> Are you considering</p>
+                 <h5>Housing Advance?</h5>
+                 <p>Limited time resduce Interes</p>
+                 <p style="color: blue">Learn More &gt;</p>
+            </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2d98b2752b.js"
+      crossorigin="anonymous"
+    ></script>
+  
+  </body>
+</html>

@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: 'Noto Serif', serif;
+}
+.container {
+    border: 1px solid #fff;
+    background-color: #fff;
+    min-height: 800px;
+    width: 100%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: auto;
+  }
+  .column {
+    padding: 10px;
+  }
+
+  /* ------------------MENU THINGS ------------------*/
+  .first-col{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 0;
+  }
+  .first-col .menu{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    padding: 5px;
+  }
+  .first-col .menu .logo {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .first-col .menu .logo img{
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  .first-col .menu .menu-things{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  i{
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    padding: 6px 2px;
+    border: none;
+    color: grey;
+  }
+  i:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+  }
+  .menu-footer{
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+  /* ------------------first page --------------------*/
+  
+  .first-col .first-page{
+
+    height: 100vh;
+    width: 100%;
+  }
+.profile-body{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile-body .profile-pic{
+    border-radius: 50%;
+  width: 150px; /* Set the desired width for your image */
+  height: 150px; /* Set the desired height for your image */
+  margin: 10px auto; /* Center the image within the container */
+  display: block;
+}
+.profile-body img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.profile-body .profile-text{
+    margin-bottom: 10px;
+}
+.profile-body .profile-text p:first-child{
+  
+    margin-bottom: 0;
+    font-size: 24px;
+    /* font-weight: 600; */
+}
+.profile-body .profile-text p:last-child{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.account-balance{
+    margin-top: 20px;
+}
+.account-balance h3,h5{
+    font-weight: 700;
+}
+.account-balance p{
+    color: grey;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.dropbtn {
+    background-color: rgb(46, 46, 222);
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .dropbtn::after {
+    content: "\25BE"; /* Unicode for down-pointing triangle (caret) */
+    position: absolute;
+    top : 3px;
+    right: 0px; 
+    font-size: 25px;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+ 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .show {display:block;}
+
+  .Transaction-text{
+    margin-top: 40px;
+  }
+  .Transaction-text h6{
+    font-weight: bold;
+  }
+  .Transaction-text p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .Transaction-text span{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  /*--------------- Second Page--------------------- */
+
+
+.second-col{
+    margin-top: 20px;
+}
+.second-col .blue{
+    color: blue;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.second-col .starting-year{
+    color: black;
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.second-col .Goals{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 14px;
+    margin-bottom: 20px;
+}
+.Goals h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.Goals p{
+    color: grey;
+    font-size: 11px;
+}
+.Goals .hr{
+    width: 150px;
+    border-top: 1px solid blue;
+}
+
+#myChart{
+    height: 300px;
+    width: 100%;
+}
+
+/* <----------------------pie Chart -------------/> */
+
+
+.pie-chart{
+  margin-top: 10px;
+}
+.pie-chart p{
+  font-size: 12px;
+  color: grey;
+}
+.big-cicleAndText{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex-basis: 45%;
+}
+.circles{
+  margin-left: 80px;
+  flex-basis: 55%;
+  display: flex;
+  align-items: center;
+}
+.circle1{
+  height: 60px;
+  width: 60px;
+  border: 2px solid green;
+  border-radius: 50%;
+  margin-right: 40px;
+  text-align: center;
+  padding: 18px 3px;
+}
+.center{
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+            /* THird Page */
+
+.third-col{
+  margin-top: 20px;
+}
+.third-col h5{
+  margin-bottom: 30px;
+}
+.third-col p{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+hr{
+  margin: 10px 20px;
+}
+.ContributionAndRate{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.button{
+  text-align: center;
+  margin: 15px 15px;
+}
+.third-col button{
+  padding: 6px 6px;
+  background-color: blue;
+  color: white;
+  border-radius: 6px;
+  border : none;
+  width: 90%;
+  cursor: pointer;
+}
+.link{
+  text-align: center;
+}
+.link a{
+  text-decoration: none;
+  font-size: 12px;
+}
+.last-box{
+  margin-top: 30px;
+  width: 100%;
+  height: 100px;
+  border: none;
+  border-left: 1px solid blue;
+  padding: 10px;
+  padding-top: 0px;
+}
+.last-box p{
+  font-size: 14px;
+}
+.last-box h5{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+
+
+/* ------------------Media Queries --------------------*/
+
+/* 
+@media only screen and (max-width:600px){
+    .first-col .menu .logo img{
+    display: none;
+    }
+     
+    .first-col .menu{
+      position: fixed;
+      bottom: 0;
+    }
+    .first-col .menu .menu-things{
+      display: flex;
+      flex-direction: row;
+    }
+    .first-col .menu .menu-things i{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .first-col .menu-footer{
+      display: none;
+    }
+} */
+
+
+
+
+  
+  
+  
